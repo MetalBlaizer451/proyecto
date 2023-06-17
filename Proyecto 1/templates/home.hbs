@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <h1>Buscar</h1>
+    <form action="/search" method="post">
+        <input placeholder="Ingrese su búsqueda" name="query" type="text">
+        <br>
+        <input class="sub" type="submit" value="Buscar">
+    </form>
+
+    <h2>Historial de busqueda:</h2>
+    <ul>
+        {{#each recommendations}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    <a href="/home">Volver a la página principal</a>
+</body>
+</html>

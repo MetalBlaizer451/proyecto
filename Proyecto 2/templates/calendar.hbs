@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+<body>
+    <h1>Calendario de entregas</h1>
+    <h3>Seleccione una opción:</h3>
+    <form action="/schedule" method="post">
+        <label for="deliveryDate">Entrega dentro de un mes:</label>
+        <input type="radio" id="deliveryDate" name="deliveryOption" value="oneMonth">
+        <br>
+        <label for="sameDay">Entrega en el mismo día con hora específica:</label>
+        <input type="radio" id="sameDay" name="deliveryOption" value="sameDay">
+        <br>
+        <label for="immediate">Entrega inmediata:</label>
+        <input type="radio" id="immediate" name="deliveryOption" value="immediate">
+        <br>
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>
